@@ -32,10 +32,12 @@ if exist .\Data\Scripts (
     echo Installed mod at %INSTALL_PATH%
 ) else (
     echo Performing initial setup...
+    rd /S /Q .git
     mkdir .\Data\Scripts\%MOD_NAME%
     copy .\setup_files\template.cs .\Data\Scripts\%MOD_NAME%\%MOD_NAME%.cs 1>nul 2>nul
     copy .\setup_files\SE_Mod.csproj .\Data\Scripts\%MOD_NAME% 1>nul 2>nul
     powershell -Command "(Get-Content .\Data\Scripts\%MOD_NAME%\SE_Mod.csproj) -replace 'SE_INSTALL_PATH', '%SE_INSTALL_PATH%' | Out-File -encoding ASCII .\Data\Scripts\%MOD_NAME%\SE_Mod.csproj"
+    rd /S /Q setup_files
     cd .\Data\Scripts
     dotnet new sln -n SE_Mod
     dotnet sln add %MOD_NAME%\SE_Mod.csproj
