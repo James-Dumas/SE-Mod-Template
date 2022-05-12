@@ -9,7 +9,7 @@ Credit to [gregretkowski's VSC-SE](https://github.com/gregretkowski/VSC-SE) whic
 
 ## VS Code Setup
 
-If you plan on using VS Code, you will need the following extensions to get Intellisense working properly:
+If you plan on using VS Code, you will need the following extensions installed for Intellisense to work properly:
 * [Microsoft's C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 * [NuGet Package Manager](https://marketplace.visualstudio.com/items?itemName=jmrog.vscode-nuget-package-manager)
 ## Usage
