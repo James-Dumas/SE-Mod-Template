@@ -17,4 +17,4 @@ To setup a new mod, first clone this repository. Then edit the file `install.bat
 
 After filling those in, run `install.bat`. It should create the proper directory structure, and put a template cs file in `Data\Scripts\(Mod Name)`. It will also remove `.git` so that you can more easily set up a new repository for your mod in the directory.
 
-After this, running `install.bat` will install the mod into the Space Engineers mod directory (without all the extraneous C# files), allowing you to test it or upload it to the workshop. So you can just run `install.bat` on the game's title screen and then load a world with the mod in it to quickly and easily test changes to the mod.
+After this, running `install.bat` will install the mod into the Space Engineers mod directory (without all the extraneous C# files), allowing you to test it or upload it to the workshop. If you run `install.bat` after uploading the mod, it will copy the `mod.sbmi` file back into the working directory. So, you can just run `install.bat` on the game's title screen and then load a world with the mod in it to quickly and easily test changes to the mod.
