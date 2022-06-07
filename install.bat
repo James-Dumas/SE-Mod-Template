@@ -1,7 +1,7 @@
 @echo off
 set MOD_NAME=
-set SE_PATH=C:\Users\Jamac\AppData\Roaming\SpaceEngineers
-set SE_INSTALL_PATH=E:\SteamLibrary\Steam\steamapps\common\SpaceEngineers
+set SE_PATH=C:\Users\USERNAME\AppData\Roaming\SpaceEngineers
+set SE_INSTALL_PATH=C:\Program Files (x86)\Steam\steamapps\common\SpaceEngineers
 set HAS_SCRIPTS=true
 
 if "%MOD_NAME%" == "" (
