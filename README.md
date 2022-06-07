@@ -15,10 +15,10 @@ If you plan on using VS Code and including C# scripts in your mod, you will need
 ## Usage
 To setup a new mod, first clone this repository. Then edit the file `install.bat` and fill in at the top of the file:
 
-1. The mod name. Don't include spaces or special characters. I'm not sure if that actually breaks anything, but, better safe than sorry.
+1. The mod name. Don't include spaces or special characters. I'm not sure if that will actually break anything, but, better safe than sorry.
 2. The path to your Space Engineers AppData directory. You should just have to fill in your Windows username unless you've moved your AppData directory or something.
 3. The path to your Space Engineers installation directory in Steam. You should only need to change this one if you have a non-standard Steam library path. You can find the installation directory easily by right-clicking on the game in your Steam library, and clicking **Manage > Browse Local Files**.
-4. Whether or not your script includes mods.
+4. Whether or not your mod will include C# scripts.
 
 After filling those in, run `install.bat`. It will create the proper directory structure, and, if you specified that the mod includes scripts, will put a template C# script in `Data\Scripts\(Mod Name)`, along with some extra files required for Intellisense. It will also remove `.git` so that you can more easily set up a new repository for your mod in the directory.
 
