@@ -22,7 +22,7 @@ if exist .\setup_files (
         set NEED_SETUP=true
     ) else (
         if "%HAS_SCRIPTS%" == "true" (
-            if not exist .\Scripts (
+            if not exist .\Data\Scripts (
                 set NEED_SETUP=true
             )
         )
