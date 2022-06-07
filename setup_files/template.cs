@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Sandbox.ModAPI;
+using Sandbox.Game.Entities;
 using VRage.Game.ModAPI;
 using VRage.Game.Components;
 using VRage.ModAPI;
@@ -22,6 +23,11 @@ namespace MyNamespace
         public override void UpdateBeforeSimulation()
         {
             // Code to run every frame
+        }
+
+        protected override void UnloadData()
+        {
+            // Cleanup code
         }
     }
 }
